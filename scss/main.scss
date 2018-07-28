@@ -1,0 +1,36 @@
+.card__seccion{
+  display: grid;
+grid-template-columns: 170px 170px 170px 170px;
+grid-gap: 10px;
+justify-content: center;
+align-items: center;
+}
+// .grid{
+//   display: grid;
+// grid-template-columns: 170px 170px 170px;
+// grid-gap: 10px;
+// justify-content: center;
+// align-items: center;
+// }
+
+
+.poke__div{
+  margin: 10px;
+}
+
+.poke__image {
+  height: 195px;
+  width: 160px;
+  border: 1px solid;
+  cursor: pointer;
+
+  border-radius: 10px;
+}
+body{
+  text-align: center;
+}
+.boton{
+  background: none;
+  border-color: aqua;
+  border-radius: 5px;
+}
