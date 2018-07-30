@@ -2,16 +2,16 @@
 
 //declaracion de variables globales
 
-let inputs = document.querySelectorAll('.input_card');
+var inputs = document.querySelectorAll('.input_card');
 var comenzar = document.querySelector('.boton');
-let resultado;
+var resultado;
 var trasera = 'https://via.placeholder.com/160x195/30d9c4/ffffff/?text=ADALAB';
 var section = document.querySelector('.card__seccion');
 
 //identifica el valor del input seleccionado
 
 function buscar() {
-  for (let i = 0; i < inputs.length; i++) {
+  for (var i = 0; i < inputs.length; i++) {
     if (inputs[i].checked) {
       resultado = inputs[i].value;
     }
