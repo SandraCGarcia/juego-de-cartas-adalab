@@ -62,6 +62,8 @@ function empezar() {
         imagen.classList.add('poke__image');
         const imagen2 = document.createElement('img');
         imagen2.classList.add('poke__image', 'poke__hidden');
+        const parrafo = document.createElement('p');
+        parrafo.innerHTML=respuesta2[i].pair;
 
         imagen.src = trasera;
         imagen2.src = respuesta2[i].image;
@@ -75,6 +77,7 @@ function empezar() {
 
         contenedor.appendChild(imagen);
         contenedor.appendChild(imagen2);
+        contenedor.appendChild(parrafo);
         section.appendChild(contenedor);
       }
 
