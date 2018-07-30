@@ -7,6 +7,10 @@ var comenzar = document.querySelector('.boton');
 var resultado;
 var trasera = 'https://via.placeholder.com/160x195/30d9c4/ffffff/?text=ADALAB';
 var section = document.querySelector('.card__seccion');
+var contando = document.querySelector('.counter');
+var cont = 0;
+
+contando.innerHTML = cont;
 
 //identifica el valor del input seleccionado
 
@@ -85,6 +89,7 @@ function mostarCarta() {
 
   for (var i = 0; i < mostrarcarta.length; i++) {
     mostrarcarta[i].addEventListener('click', showCard);
+
   }
 }
 
@@ -102,4 +107,8 @@ function showCard(event) {
       'poke__hidden'
     );
   }
+  cont = cont+1;
+  contando.innerHTML = cont;
+
 }
+
